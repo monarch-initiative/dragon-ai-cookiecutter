@@ -1,0 +1,15 @@
+default_context:
+  project_name: assaykb
+  github_org: monarch-initiative
+  project_description: Representation of assays and their properties
+  attributes: usual metadata (name, description), parent term and subtypes, plus everything you might want to represent an assay
+  full_name: dragon-ai
+  email: dragon-ai@monarch-initiative.org
+  license: BSD-3
+  main_schema_class: Assay
+  create_python_classes: "Yes"
+  use_schemasheets: "No"
+  google_sheet_id: 1wVoaiFg47aT9YWNeRfTZ8tYHN8s8PAuDx5i2HUcDpvQ
+  google_sheet_tabs: my enums
+  github_token_for_pypi_deployment: PYPI_PASSWORD
+

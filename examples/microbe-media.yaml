@@ -1,0 +1,15 @@
+default_context:
+  project_name: microbe-media
+  github_org: monarch-initiative
+  project_description: Representation of both simple (defined) and complex media for microbial growth
+  attributes: usual metadata (name, description), ingredients (which can be complex recursive mixtures of ingredients plus quantities), conditions (e.g ph), microbes favored (and not favored), growth preferences/phenotypes
+  full_name: Dr Microbe
+  email: dr-microbe@microbes-r-us.org
+  license: BSD-3
+  main_schema_class: Media
+  create_python_classes: "Yes"
+  use_schemasheets: "No"
+  google_sheet_id: 1wVoaiFg47aT9YWNeRfTZ8tYHN8s8PAuDx5i2HUcDpvQ
+  google_sheet_tabs: my enums
+  github_token_for_pypi_deployment: PYPI_PASSWORD
+

@@ -1,20 +1,24 @@
 ## Add your own custom Makefile targets here
 
 
-KB_NAME = {{cookiecutter.__project_slug}}
+KB_NAME = {{cookiecutter.__project_slug}}_kb
 CATEGORY = {{cookiecutter.main_schema_class}}
 COLLECTION = {{cookiecutter.__collection}}
 INDEX_SLOTS = {{cookiecutter.__index_slot}}
 
 KB = kb/$(KB_NAME).yaml
 
+setup: bootstrap all
+
+bootstrap:
+	test -f $(SOURCE_SCHEMA_PATH) && echo already have schema || ( curategpt bootstrap schema -C kb_config.yaml > $(SOURCE_SCHEMA_PATH).tmp && mv $(SOURCE_SCHEMA_PATH).tmp $(SOURCE_SCHEMA_PATH) )
+	test -f $(KB) && echo already kb || ( curategpt bootstrap data -s $(SOURCE_SCHEMA_PATH) > $(KB).tmp && mv $(KB).tmp $(KB) )
+
 test-examples: test-data validate-data
 
 test-data: $(KB)
 	yq . $<
 
-bootstrap-schema:
-	curategpt bootstrap schema -C kb_config.yaml > tmp/sample-schema.yaml
 
 validate-data: $(KB) $(SOURCE_SCHEMA_PATH)
 	yq ea '[.]' $< | yq e '{"$(INDEX_SLOTS)": .}' - > tmp/data.yaml && \
