@@ -1,0 +1,4 @@
+kb_name: {{ cookiecutter.__project_slug }}
+main_class: {{ cookiecutter.main_schema_class }}
+description: {{ cookiecutter.project_description }}
+attributes: {{ cookiecutter.attributes }}

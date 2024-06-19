@@ -1,0 +1,27 @@
+---
+site_name: "{{cookiecutter.project_name}}"
+theme:
+  name: material
+  # palette:
+  #  scheme: slate
+  #  primary: cyan
+  features:
+    - content.tabs.link
+plugins:
+  - search
+  - mermaid2
+  - mermaid2:
+      version: 10.9.0
+nav:
+  # - Home: home.md
+  - Index: index.md
+  - About: about.md
+site_url: https://{{cookiecutter.github_org}}.github.io/{{cookiecutter.project_name}}
+repo_url: https://github.com/{{cookiecutter.github_org}}/{{cookiecutter.project_name}}
+
+# Uncomment this block to enable use of Google Analytics.
+# Replace the property value with your own ID.
+# extra:
+#   analytics:
+#     provider: google
+#     property: G-XXXXXXXXXX

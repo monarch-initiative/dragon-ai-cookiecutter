@@ -1,0 +1,25 @@
+[Term]
+id: X:1
+is_a: X:5
+
+[Term]
+id: X:2
+is_a: X:1
+
+[Term]
+id: X:3
+relationship: part_of X:2
+
+[Term]
+id: X:4
+relationship: part_of X:3
+
+[Term]
+id: X:5
+is_a: X:4
+
+
+
+
+
+
