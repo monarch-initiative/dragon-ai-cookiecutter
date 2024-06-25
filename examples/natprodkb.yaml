@@ -1,0 +1,15 @@
+default_context:
+  project_name: natprodkb
+  github_org: monarch-initiative
+  project_description: Representation of individual natural products and their properties
+  attributes: usual metadata (name, description), chemical classification, components, known pathways/genes, what plants/species produce them, applications/roles
+  full_name: dragon-ai
+  email: dragon-ai@monarch-initiative.org
+  license: BSD-3
+  main_schema_class: NaturalProduct
+  create_python_classes: "Yes"
+  use_schemasheets: "No"
+  google_sheet_id: 1wVoaiFg47aT9YWNeRfTZ8tYHN8s8PAuDx5i2HUcDpvQ
+  google_sheet_tabs: my enums
+  github_token_for_pypi_deployment: PYPI_PASSWORD
+

@@ -1,0 +1,15 @@
+default_context:
+  project_name: gcprkb
+  github_org: monarch-initiative
+  project_description: Database of GCPRs (Gene Prootein Coupled Receptors)
+  attributes: usual metadata (name, description), classifications, primary functions, human genes, implicated diseases, taxonomic range, any pharmacological informations of relevance, other info
+  full_name: dragon-ai
+  email: dragon-ai@monarch-initiative.org
+  license: BSD-3
+  main_schema_class: GCPR
+  create_python_classes: "Yes"
+  use_schemasheets: "No"
+  google_sheet_id: 1wVoaiFg47aT9YWNeRfTZ8tYHN8s8PAuDx5i2HUcDpvQ
+  google_sheet_tabs: my enums
+  github_token_for_pypi_deployment: PYPI_PASSWORD
+
