@@ -66,3 +66,18 @@ Alternatively, to add linkml project files to pre-existing directory,
 cruft create -f https://github.com/linkml/linkml-project-cookiecutter
 ```
 
+### Step 2: Initialize
+
+```bash
+cd my-project-name
+make bootstrap
+```
+
+TODO: document human-in-the-loop-cycle
+
+### Step 3: Make full project
+
+```bash
+make install
+make all
+```
