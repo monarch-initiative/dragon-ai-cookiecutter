@@ -1,4 +1,4 @@
-include project.Makefile
+include linkml.Makefile
 include dragon.Makefile
 include project.Makefile
 
