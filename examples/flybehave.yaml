@@ -1,0 +1,15 @@
+default_context:
+  project_name: flybehave
+  github_org: monarch-initiative
+  project_description: Representation of behaviors in Drosophila melanogatser
+  attributes: usual metadata (name, description), parent class, substeps/actions, brain circuits and regions, implicated neurons and cell types, pathways, genes
+  full_name: dragon-ai
+  email: dragon-ai@monarch-initiative.org
+  license: BSD-3
+  main_schema_class: Behavior
+  create_python_classes: "Yes"
+  use_schemasheets: "No"
+  google_sheet_id: 1wVoaiFg47aT9YWNeRfTZ8tYHN8s8PAuDx5i2HUcDpvQ
+  google_sheet_tabs: my enums
+  github_token_for_pypi_deployment: PYPI_PASSWORD
+
