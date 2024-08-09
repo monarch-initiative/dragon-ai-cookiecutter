@@ -1,0 +1,17 @@
+default_context:
+  project_name: virus
+  github_org: monarch-initiative
+  project_description: A KG focused around virus species, collecting key molecular and phenotypic characteristics.
+    Not limited to pathogens - also includes phages and environmentally relevant viruses
+  attributes: usual metadata (name, description), classification, virion (example-  a tri-segmented dsRNA genome enclosed in one or two concentric, icosahedrally-symmetric protein shells).
+     genome (e.g. Three segments of linear, double-stranded RNA, 12.7–15.0 kbp in total), replication, translation, environment and preferred host(s). 
+  full_name: Dr Microbe
+  email: dr-microbe@microbes-r-us.org
+  license: BSD-3
+  main_schema_class: Virus
+  create_python_classes: "Yes"
+  use_schemasheets: "No"
+  google_sheet_id: 1wVoaiFg47aT9YWNeRfTZ8tYHN8s8PAuDx5i2HUcDpvQ
+  google_sheet_tabs: my enums
+  github_token_for_pypi_deployment: PYPI_PASSWORD
+
