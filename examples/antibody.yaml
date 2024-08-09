@@ -1,0 +1,15 @@
+default_context:
+  project_name: antibody
+  github_org: monarch-initiative
+  project_description: A KG focused around antibodies, biological, and medical properties
+  attributes: usual metadata (name, description), classification, species, target info, etc
+  full_name: Dr Antibody
+  email: dr-antibody@example.com
+  license: BSD-3
+  main_schema_class: Antibody
+  create_python_classes: "Yes"
+  use_schemasheets: "No"
+  google_sheet_id: 1wVoaiFg47aT9YWNeRfTZ8tYHN8s8PAuDx5i2HUcDpvQ
+  google_sheet_tabs: my enums
+  github_token_for_pypi_deployment: PYPI_PASSWORD
+
