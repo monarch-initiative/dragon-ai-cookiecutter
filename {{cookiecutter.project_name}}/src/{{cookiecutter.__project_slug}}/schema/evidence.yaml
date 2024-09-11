@@ -1,0 +1,59 @@
+id: https://w3id.org/evidence
+name: evidence
+prefixes:
+  linkml: https://w3id.org/linkml/
+  evidence: https://w3id.org/evidence
+default_prefix: evidence
+imports:
+- linkml:types
+
+types:
+  PMID:
+    typeof: string
+  FrequencyQuantity:
+    typeof: string
+enums:
+  EvidenceItemSupportEnum:
+    description: The level of support for an evidence item
+    permissible_values:
+      WRONG_STATEMENT:
+        description: WRONG_STATEMENT
+      SUPPORT:
+        description: SUPPORT
+      REFUTE:
+        description: REFUTE
+      NO_EVIDENCE:
+        description: NO_EVIDENCE
+      PARTIAL:
+        description: PARTIAL
+
+slots:
+  evidence:
+    multivalued: true
+    range: EvidenceItem
+    inlined_as_list: true
+  reference:
+    examples:
+      - value: PMID:35533128
+    range: PMID
+  supports:
+    examples:
+      - value: SUPPORT
+    range: EvidenceItemSupportEnum
+  snippet:
+    examples:
+      - value: At the moment there is no healing therapy, so early kidney transplant is a fundamental tool to improve prognosis.
+    range: string
+  explanation:
+    examples:
+      - value: There is no curative treatment for nephronophthisis, indicating that supportive care, including symptomatic treatment and monitoring, is currently applied to manage associated complications.
+    range: string
+
+classes:
+  EvidenceItem:
+    slots:
+      - reference
+      - supports
+      - snippet
+      - explanation
+
